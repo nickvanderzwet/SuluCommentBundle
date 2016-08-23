@@ -13,7 +13,7 @@
 
         <one-to-one target-entity="Sulu\Bundle\CommentBundle\Entity\ThreadInterface" field="thread"
                     inversed-by="comments">
-            <join-column name="threadId"/>
+            <join-column name="threadId" nullable="false"/>
             <cascade>
                 <cascade-all/>
             </cascade>
